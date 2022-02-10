@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>İstatistik</h2>
+<br />
+<div class="row">
+    <div class="col-lg-3 col-6">
+        <div class="small-box" style="background-color:lightsalmon;color:white">
+            <div class="inner">
+                <h3>@ViewBag.totalcategory</h3>
+                <p>Toplam Kategori Sayısı</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-6">
+        <div class="small-box" style="background-color:lightseagreen;color:white">
+            <div class="inner">
+                <h3>@ViewBag.totalheading</h3>
+                <p>Yazılım Kategorisi Başlık Sayısı</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-6">
+        <div class="small-box" style="background-color:lightgreen;color:white">
+            <div class="inner">
+                <h3>@ViewBag.writera</h3>
+                <p>Yazar Adında "a" Geçenler</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-6">
+        <div class="small-box" style="background-color:lightcoral;color:white">
+            <div class="inner">
+                <h3>@ViewBag.mostheading</h3>
+                <p>En Fazla Başlığa Sahip Kategori</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-6">
+        <div class="small-box" style="background-color:lightslategrey;color:white">
+            <div class="inner">
+                <h3>@ViewBag.categorydiff</h3>
+                <p>Kategori True/False Farkı</p>
+            </div>
+        </div>
+    </div>
+</div>
